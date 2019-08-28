@@ -47,6 +47,9 @@ public class StreamTest {
 
         System.out.println("-----------------------------------使用java8----------------------------------------------");
         System.out.println("列表："+strings);
+
+        strings.stream().forEach(string -> System.out.print(string));
+
         count = strings.stream().filter(string -> string.isEmpty()).count();
         System.out.println("列表中空字串的个数："+count);
 
